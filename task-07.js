@@ -127,8 +127,12 @@ do {
 account.getBalance();
 console.log(account.transactions);
 console.log("Object of id transaction:");
-console.log(account.getTransactionDetails(prompt("Input number transaction")));
+console.log(
+  account.getTransactionDetails(prompt("Input number of transaction"))
+);
 console.log("Sum of transaction:");
 console.log(
-  account.getTransactionTotal(prompt("Enter transaction type for sum"))
+  account.getTransactionTotal(
+    prompt("Enter transaction type for sum(deposit/withdraw)")
+  )
 );
